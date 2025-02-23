@@ -40,12 +40,13 @@ const Footer: React.FC<Footerprops> = ({ title }) => {
                     </div>
 
                     <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 lg:text-left">
-                        Hagas lo que hagas, hazlo con pasión.
-                    </p>
+  Hagas lo que hagas, hazlo con el <img className="h-6 inline-block align-middle" src="/corazon.svg" alt="corazón" />
+</p>
+
                 </div>
 
                 <ul
-                    className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12"
+                    className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12 text-s"
                 >
                     <li>
                         <a className="text-gray-700 transition hover:text-gray-700/75" href="about"> About </a>
@@ -66,7 +67,7 @@ const Footer: React.FC<Footerprops> = ({ title }) => {
             </div>
 
             <p className="mt-12 text-center text-sm text-gray-500 lg:text-right">
-                Copyright &copy; 2022. All rights reserved.
+                Copyright &copy; {new Date().getFullYear()} | Juan Manuel Betancur. All rights REVERSED
             </p>
         </div>
     </footer>

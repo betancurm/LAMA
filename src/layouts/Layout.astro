@@ -1,7 +1,10 @@
 ---
+
 import Header from "../components/Header.tsx";
 import Footer from "../components/Footer.tsx";
 import "../styles/global.css";
+const { title, frontmatter } = Astro.props;
+const pageTitle = title ?? frontmatter?.title
 ---
 
 <!doctype html>
@@ -11,12 +14,14 @@ import "../styles/global.css";
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/logoJB.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>{ pageTitle }</title>
 	</head>
 
-	<body class="flex flex-col min-h-screen">
-		<Header title="header" />
-		<main class="flex-grow"><slot /></main>
-		<Footer title="footer" />
+	<body class="flex flex-col min-h-screen" title="">
+		<Header title="" />
+		<main class="flex-grow conteiner mx-auto p-8">
+			<slot />
+		</main>
+		<Footer title="" />
 	</body>
 </html>
