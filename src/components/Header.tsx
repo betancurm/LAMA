@@ -12,15 +12,18 @@ const Header: React.FC<HeaderProps> = ({ title }) => {
 
                     <a className="block" href="/">
                         <span className="sr-only">Home</span>
-                        <img className="h-8" src="/logoJB.svg" alt="Logo" />
+                        {/* <img className="h-8" src="/logoJB.svg" alt="Logo" /> */}
                     </a>
 
                     <nav className="mt-4 md:mt-0" aria-label="Global">
                         <ul className="flex items-center gap-12 text-s">
-                            <li>
+                        <li>
+                                <a className="text-gray-700 transition hover:text-gray-700/75" href="">login</a>
+                            </li>
+                       {/*      <li>
                                 <a className="text-gray-700 transition hover:text-gray-700/75" href="../about">About Me</a>
                             </li>
-                            <li>
+                           <li>
                                 <a className="text-gray-700 transition hover:text-gray-700/75" href="../Achievements">Achievements</a>
                             </li>
                             <li>
@@ -31,7 +34,7 @@ const Header: React.FC<HeaderProps> = ({ title }) => {
                             </li>
                             <li>
                                 <a className="text-gray-700 transition hover:text-gray-700/75" href="#">Projects</a>
-                            </li>
+                            </li> */}
                         </ul>
                     </nav>
                 </div>

@@ -31,7 +31,7 @@ const Footer: React.FC<Footerprops> = ({ title }) => {
                 </a>
             </div>
 
-            <div className="lg:flex lg:items-end lg:justify-between">
+ {/*            <div className="lg:flex lg:items-end lg:justify-between">
                 <div>
                     <div className="flex justify-center text-teal-600 lg:justify-start">
                         
@@ -64,10 +64,10 @@ const Footer: React.FC<Footerprops> = ({ title }) => {
                         <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Blog </a>
                     </li>
                 </ul>
-            </div>
+            </div> */}
 
             <p className="mt-12 text-center text-sm text-gray-500 lg:text-right">
-                Copyright &copy; {new Date().getFullYear()} | Juan Manuel Betancur. All rights REVERSED
+                Copyright &copy; {new Date().getFullYear()} | All rights REVERSED
             </p>
         </div>
     </footer>
