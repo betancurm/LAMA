@@ -18,7 +18,7 @@ const Header: React.FC<HeaderProps> = ({ title }) => {
                     <nav className="mt-4 md:mt-0" aria-label="Global">
                         <ul className="flex items-center gap-12 text-s">
                         <li>
-                                <a className="text-gray-700 transition hover:text-gray-700/75" href="">login</a>
+                                <a className="text-gray-700 transition hover:text-gray-700/75" href="">login 2</a>
                             </li>
                        {/*      <li>
                                 <a className="text-gray-700 transition hover:text-gray-700/75" href="../about">About Me</a>
