@@ -11,13 +11,11 @@ const Sidebar: React.FC<SidebarProps> = ({ title }) => {
             <h2 className="text-xl font-bold mb-6 text-center">{title}</h2>
             
             <nav className="flex flex-col gap-4">
-                <a href="/login" className="flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-[#23274a]">
-                    <FaUser /> <span>Login</span>
-                </a>
-                <a href="/crear-miembro" className="flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-[#23274a]">
+        
+                <a href="/CreateMember" className="flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-[#23274a]">
                     <FaUserPlus /> <span>Crear Miembro</span>
                 </a>
-                <a href="/consultar-miembro" className="flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-[#23274a]">
+                <a href="/ConsultMember" className="flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-[#23274a]">
                     <FaSearch /> <span>Consultar Miembro</span>
                 </a>
             </nav>
