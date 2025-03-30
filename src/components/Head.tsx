@@ -17,6 +17,7 @@ const Head: React.FC<HeadProps> = ({
     viewport = "width=device-width"
 }) => {
     return (
+        
         <>
             <meta charSet={charset} />
             <meta name="viewport" content={viewport} />
@@ -25,6 +26,7 @@ const Head: React.FC<HeadProps> = ({
             <meta name="generator" content="Astro" />
             <title>{title}</title>
         </>
+        
     );
 };
 

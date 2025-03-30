@@ -15,13 +15,19 @@ const pageTitle = title ?? frontmatter?.title;
 			title={pageTitle}
 			description="Tu descripción personalizada aquí"
 		/>
+		<script is:inline>
+		if (!localStorage.getItem('token')) {
+			window.location.href = '/login';
+		  }
+		</script>
 	</head>
 
 	<body class="flex flex-col min-h-screen" title="">
-		<Header title="" />
+		<Header client:load title="" />
 		<main class="flex-grow conteiner mx-auto p-8">
 			<slot />
 		</main>
 		<Footer title="" />
 	</body>
+	
 </html>
