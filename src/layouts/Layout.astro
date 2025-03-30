@@ -1,10 +1,11 @@
 ---
-
 import Header from "../components/Header.tsx";
 import Footer from "../components/Footer.tsx";
+import Sidebar from "../components/Sidebar.tsx"; // ✅ Importación corregida
 import "../styles/global.css";
+
 const { title, frontmatter } = Astro.props;
-const pageTitle = title ?? frontmatter?.title
+const pageTitle = title ?? frontmatter?.title;
 ---
 
 <!doctype html>
@@ -19,9 +20,15 @@ const pageTitle = title ?? frontmatter?.title
 
 	<body class="flex flex-col min-h-screen" title="">
 		<Header title="" />
-		<main class="flex-grow conteiner mx-auto p-8">
+		
+		<!-- ✅ Aquí va el Sidebar corregido -->
+		<Sidebar title="Menú Principal" client:load />
+	
+		<main class="flex-grow container mx-auto p-8">
 			<slot />
 		</main>
+		
 		<Footer title="" />
 	</body>
+	
 </html>
