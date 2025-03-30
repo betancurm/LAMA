@@ -19,6 +19,7 @@ const Header: React.FC<HeaderProps> = ({ title }) => {
                         <ul className="flex items-center gap-12 text-s">
                         <li>
                                 <a className="text-gray-700 transition hover:text-gray-700/75" href="../login">login</a>
+
                             </li>
                           
                         </ul>
