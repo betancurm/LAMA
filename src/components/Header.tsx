@@ -25,7 +25,7 @@ const Header: React.FC<HeaderProps> = ({ title }) => {
                                 <a className="text-gray-700 transition hover:text-gray-700/75" href="/ConsultMember">Consultar Miembros</a>
                             </li>
                             <li>
-                                <a onClick={handleLogout} className="text-gray-700 transition hover:text-gray-700/75" href="#">Log Out</a>
+                                <a onClick={handleLogout} className="text-gray-700 transition hover:text-gray-700/75" href="#">Cerrar Sesión</a>
                             </li>
                         
           

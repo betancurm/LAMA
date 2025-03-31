@@ -184,7 +184,7 @@ import Layout from "../layouts/Layout.astro";
             `).join('');
 
             // Actualizar el conteo de usuarios y el total de páginas
-            document.getElementById('userCount').textContent = `Total Usuarios: ${data.total}`;
+            document.getElementById('userCount').textContent = `${data.total}`;
             totalPages = Math.ceil(data.total / usersPerPage);
 
             // Generar los números de página

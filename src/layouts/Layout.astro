@@ -4,6 +4,7 @@ import Head from "../components/Head";
 import Footer from "../components/Footer";
 import "../styles/global.css";
 
+
 const { title, frontmatter } = Astro.props;
 const pageTitle = title ?? frontmatter?.title;
 ---
@@ -24,9 +25,11 @@ const pageTitle = title ?? frontmatter?.title;
 
 	<body class="flex flex-col min-h-screen " title="">
 		<Header client:load title="" />
-		<main class="flex-grow conteiner mx-auto p-8 ">
-			<slot />
-		</main>
+		<div class="flex">
+			<main class="flex-grow conteiner mx-auto p-8 ">
+				<slot />
+			</main>
+		</div>
 		<Footer title="" />
 	</body>
 	
